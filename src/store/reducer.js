@@ -25,9 +25,7 @@ const reducer = (state = initialState, action) => {
     }
     case UPDATE_MOVIE: {
       const updatedMovie = action.payload.movie;
-      updatedMovie.watched == false
-        ? (updatedMovie.watched = true)
-        : (updatedMovie.watched = false);
+      updatedMovie.watched = !updatedMovie.watched;
       let newMovies = state.movies.map((movie) =>
         movie.id != action.payload.id ? movie : updatedMovie
       );

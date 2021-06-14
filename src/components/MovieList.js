@@ -4,10 +4,10 @@ const MovieList = () => {
   return (
     <div>
       <div className="movies-list">
-        <List text="Watchlist" filter="unWatched" />
+        <List watched={false} />
       </div>
       <div className="watched-movies-list">
-        <List text="Watched" filter="Watched" />
+        <List watched />
       </div>
     </div>
   );

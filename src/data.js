@@ -2,27 +2,27 @@ const movies = [
   {
     id: 1,
     name: ' The Shawshank Redemption',
-    status: 'Watched',
+    watched: true,
   },
   {
     id: 2,
     name: 'Interstellar',
-    status: 'Watched',
+    watched: true,
   },
   {
     id: 3,
     name: ' Inception',
-    status: 'Watched',
+    watched: true,
   },
   {
     id: 4,
     name: 'Seven Samurai',
-    status: 'unWatched',
+    watched: false,
   },
   {
     id: 5,
     name: ' Untouchable',
-    status: 'unWatched',
+    watched: false,
   },
 ];
 

@@ -8,21 +8,16 @@ const List = (props) => {
   let movies = moviesData
     .filter(
       (movie) =>
-        movie.status === props.filter &&
+        movie.watched == props.watched &&
         movie.name.toLowerCase().includes(query.toLowerCase())
     )
-    .map((movie) => {
-      return (
-        <MovieItem
-          movie={movie}
-          text={props.filter === 'Watched' ? 'Unwatch' : 'Watched'}
-        />
-      );
-    });
+    .map((movie) => (
+      <MovieItem movie={movie} text={props.watched ? 'Unwatch' : 'Watched'} />
+    ));
   return (
     <div>
       <label>
-        {props.text} : {movies.length}
+        {props.watched ? 'Watched' : 'Watchlist'} : {movies.length}
       </label>
 
       <input

@@ -14,6 +14,7 @@ const List = (props) => {
     .map((movie) => (
       <MovieItem movie={movie} text={props.watched ? 'Unwatch' : 'Watched'} />
     ));
+
   return (
     <div>
       <label>
@@ -26,7 +27,7 @@ const List = (props) => {
         type="search"
         placeholder="search"
       />
-      {movies}
+      {movies.length > 0 ? movies : 'no movies found'}
     </div>
   );
 };

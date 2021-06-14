@@ -20,7 +20,7 @@ const AddMovie = () => {
       <input
         value={movie}
         onChange={handleChange}
-        placeholder="add movie"
+        placeholder="Add movie"
         style={{ height: 30, width: 160 }}
       />
       <Button type="submit" variant="contained" color="primary">

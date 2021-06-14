@@ -1,12 +1,18 @@
 import List from './List';
-
+import AddMovie from "./AddMovie"
 const MovieList = () => {
   return (
+    
     <div>
-      <div className="movies-list">
+      <div className="first-list" >
+        <AddMovie  />
+      <div className="second-list">
+      
         <List watched={false} />
       </div>
-      <div className="watched-movies-list">
+      </div>
+      
+      <div className="watched-movies-list" >
         <List watched />
       </div>
     </div>

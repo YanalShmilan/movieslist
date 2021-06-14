@@ -8,8 +8,8 @@ import CardContent from '@material-ui/core/CardContent';
 const MovieItem = (props) => {
   return (
     <Card className="movie-item">
-      <CardContent>
-        <Typography>{props.movie.name}</Typography>
+      <CardContent >
+        <Typography >{props.movie.name}</Typography>
       </CardContent>
       <CardActions>
         <UpdateMovie movie={props.movie} text={props.text} />

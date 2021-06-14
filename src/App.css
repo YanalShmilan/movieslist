@@ -1,16 +1,20 @@
 .App {
+  
+  color: rgb(42, 56, 68);
   text-align: center;
-  color: aliceblue;
+  font-family: sans-serif;
 }
 .add-input {
+  margin-bottom: 10px
 }
 body {
-  background-color: #282c34;
+  background-image: linear-gradient(#907FA4,#A58FAA,#A6D6D6,#EDEDD0);
+  height:100vh
 }
 .movies-list {
   margin-top: 10%;
   margin-left: 10%;
-  border: white;
+  border-color: blue;
   border-style: groove;
   float: left;
 
@@ -18,11 +22,11 @@ body {
   width: 30%;
 }
 .watched-movies-list {
-  margin-top: 10%;
+  margin-top: 7%;
   margin-right: 10%;
 
   float: right;
-  border: white;
+  border-color: blue;
   border-style: groove;
   border-radius: 10px;
   width: 30%;
@@ -72,4 +76,21 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.first-list {
+margin-top:5%;
+
+margin-left: 10%;
+
+float:left;
+
+width:30%;
+}
+
+.second-list{
+  border: white;
+    border-style: groove;
+    
+   border-radius: 10px
 }

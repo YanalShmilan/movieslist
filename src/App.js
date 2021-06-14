@@ -6,7 +6,7 @@ import AddMovie from './components/AddMovie';
 function App() {
   return (
     <div className="App">
-      <AddMovie />
+     Welcome to my Movie Watchlist
       <MovieList />
     </div>
   );

@@ -25,25 +25,12 @@ const reducer = (state = initialState, action) => {
       return { ...state, movies: filterdMovies };
     }
     case UPDATE_MOVIE: {
-      let newMovie = state.movies.find(
-        (movie) => movie.id === action.payload.id
-      );
-      if (newMovie.status == 'unWatched') {
-        newMovie = {
-          name: newMovie.name,
-          stauts: 'Watched',
-          id: newMovie.id,
-        };
-      } else if (newMovie.status == 'Watched') {
-        newMovie = {
-          name: newMovie.name,
-          stauts: 'unWatched',
-          id: newMovie.id,
-        };
-      }
-
+      const updatedMovie = action.payload.movie;
+      updatedMovie.status == 'unWatched'
+        ? (updatedMovie.status = 'Watched')
+        : (updatedMovie.status = 'unWatched');
       let newMovies = state.movies.map((movie) =>
-        movie.id != action.payload.id ? movie : newMovie
+        movie.id != action.payload.id ? movie : updatedMovie
       );
       return { ...state, movies: newMovies };
     }

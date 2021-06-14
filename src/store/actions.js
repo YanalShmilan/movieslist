@@ -14,9 +14,9 @@ export const deleteMovie = (id) => {
     payload: { id },
   };
 };
-export const updateMovie = (id) => {
+export const updateMovie = (movie) => {
   return {
     type: UPDATE_MOVIE,
-    payload: { id },
+    payload: { movie },
   };
 };

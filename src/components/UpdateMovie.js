@@ -5,7 +5,7 @@ const UpdateMovie = (props) => {
   const dispatch = useDispatch();
   return (
     <Button
-      onClick={() => dispatch(updateMovie(props.id))}
+      onClick={() => dispatch(updateMovie(props.movie))}
       variant="contained"
       color="primary"
     >

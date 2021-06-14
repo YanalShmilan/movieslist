@@ -1,5 +1,42 @@
 .App {
   text-align: center;
+  color: aliceblue;
+}
+.add-input {
+}
+body {
+  background-color: #282c34;
+}
+.movies-list {
+  margin-top: 10%;
+  margin-left: 10%;
+  border: white;
+  border-style: groove;
+  float: left;
+
+  border-radius: 10px;
+  width: 30%;
+}
+.watched-movies-list {
+  margin-top: 10%;
+  margin-right: 10%;
+
+  float: right;
+  border: white;
+  border-style: groove;
+  border-radius: 10px;
+  width: 30%;
+}
+.movie-item {
+  margin: 10px;
+}
+.search {
+  margin: 10px;
+  margin-left: 37%;
+  width: 60%;
+  padding: 5px;
+  align-self: left;
+  display: block;
 }
 
 .App-logo {
